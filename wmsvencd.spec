@@ -13,8 +13,6 @@ URL:		http://www.harshbutfair.org/software/wmsvencd.html
 BuildRequires:	XFree86-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define 	_prefix		/usr/X11R6
-%define 	_mandir 	%{_prefix}/man
 
 %description
 wmsvencd is yet another CD player for X. It displays the current track
