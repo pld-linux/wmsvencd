@@ -41,14 +41,13 @@ install %{name} $RPM_BUILD_ROOT%{_bindir}
 install %{name}.1x $RPM_BUILD_ROOT%{_mandir}/man1/%{name}.1
 #install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/DockApplets
 
-gzip -9nf README
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc README
 %attr(755,root,root) %{_bindir}/%{name}
 %{_mandir}/man1/*
 
