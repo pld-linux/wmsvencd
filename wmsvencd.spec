@@ -12,7 +12,6 @@ Patch0:         %{name}-compile.patch
 URL:            http://www.linuxfreak.com/~wmsvencd
 BuildRequires: 	XFree86-devel
 BuildRequires:	xpm-devel
-ExclusiveArch:  %{ix86}
 BuildRoot:	/tmp/%{name}-%{version}-root
 
 %define _prefix	/usr/X11R6
