@@ -11,7 +11,6 @@ Source1:	%{name}.desktop
 Patch:		%{name}-compile.patch
 URL:		http://www.linuxfreak.com/~wmsvencd
 BuildRequires:	XFree86-devel
-BuildRequires:	xpm-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define 	_prefix		/usr/X11R6
