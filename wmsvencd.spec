@@ -32,19 +32,18 @@ odtwarzacza - wszystko w malutkim obszarze 64x64 pixele.
 %patch -p1
 
 %build
-%{__make} CFLAGS="$RPM_OPT_FLAGS"
+%{__make} CFLAGS="%{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1} \
 	$RPM_BUILD_ROOT%{_applnkdir}/DockApplets
 
-install -s %{name} $RPM_BUILD_ROOT%{_bindir}
+install %{name} $RPM_BUILD_ROOT%{_bindir}
 install %{name}.1x $RPM_BUILD_ROOT%{_mandir}/man1/%{name}.1
 install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/DockApplets
 
-gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man1/* \
-        README
+gzip -9nf README
 
 %clean
 rm -rf $RPM_BUILD_ROOT
