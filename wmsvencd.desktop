@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=wmsvencd
+Comment=Yet Another CD PLayer with CDDB for Window Maker
+Comment[pl]=Kolejny odtwarzacz CD pod Window Makera z obs³ug± CDDB
+Exec=wmsvencd
+Terminal=0
+Type=Application
