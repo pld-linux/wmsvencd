@@ -36,11 +36,11 @@ make CFLAGS="$RPM_OPT_FLAGS"
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1} \
-	$RPM_BUILD_ROOT/etc/X11/applnk/DockApplets
+	$RPM_BUILD_ROOT/usr/X11R6/share/applnk/DockApplets
 
 install -s %{name} $RPM_BUILD_ROOT%{_bindir}
 install %{name}.1x $RPM_BUILD_ROOT%{_mandir}/man1/%{name}.1
-install %{SOURCE1} $RPM_BUILD_ROOT/etc/X11/applnk/DockApplets
+install %{SOURCE1} $RPM_BUILD_ROOT/usr/X11R6/share/applnk/DockApplets
 
 gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man1/* \
         README
@@ -54,4 +54,4 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/%{name}
 %{_mandir}/man1/*
 
-/etc/X11/applnk/DockApplets/%{name}.desktop
+/usr/X11R6/share/applnk/DockApplets/%{name}.desktop
