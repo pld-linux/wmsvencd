@@ -3,12 +3,13 @@ Summary(pl):	Dokowalny odtwarzacz CD dla Window Makera z obs³ug± CDDB
 Name:		wmsvencd
 Version:	0.5.0
 Release:	1
-Copyright:	GPL
+License:	GPL
 Group:		X11/Window Managers/Tools
+Group(de):	X11/Fenstermanager/Werkzeuge
 Group(pl):	X11/Zarz±dcy Okien/Narzêdzia
 Source0:	http://www.cs.uwa.edu.au/~cook-s/%{name}-%{version}.tar.gz
-Source1:	%{name}.desktop 
-Patch:		%{name}-compile.patch
+Source1:	%{name}.desktop
+Patch0:		%{name}-compile.patch
 URL:		http://www.linuxfreak.com/~wmsvencd
 BuildRequires:	XFree86-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -17,13 +18,14 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define 	_mandir 	%{_prefix}/man
 
 %description
-wmsvencd is yet another CD player for X. It displays the current track number,
-time, disc title, song title, and CD player controls all in atiny 64x64 pixels.
+wmsvencd is yet another CD player for X. It displays the current track
+number, time, disc title, song title, and CD player controls all in
+atiny 64x64 pixels.
 
 %description -l pl
-wsvencd jest jeszcze jednym odtwarzaczem CD pod X-y. Wy¶wietla bie¿±cy numer
-piosenki, czas, tytu³ p³yty, tytu³ piosenki oraz kontrolki odtwarzacza -
-wszystko w malutkim obszarze 64x64 pixele. 
+wsvencd jest jeszcze jednym odtwarzaczem CD pod X-y. Wy¶wietla bie¿±cy
+numer piosenki, czas, tytu³ p³yty, tytu³ piosenki oraz kontrolki
+odtwarzacza - wszystko w malutkim obszarze 64x64 pixele.
 
 %prep
 %setup -q
