@@ -12,11 +12,10 @@ Patch:		%{name}-compile.patch
 URL:		http://www.linuxfreak.com/~wmsvencd
 BuildRequires:	XFree86-devel
 BuildRequires:	xpm-devel
-BuildRoot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define 	_prefix		/usr/X11R6
 %define 	_mandir 	%{_prefix}/man
-%define		_applnkdir	%{_datadir}/applnk
 
 %description
 wmsvencd is yet another CD player for X. It displays the current track number,
