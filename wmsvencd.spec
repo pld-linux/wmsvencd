@@ -2,7 +2,7 @@ Summary:	Window Maker Dockable CD-Player with CDDB
 Summary(pl):	Dokowalny odtwarzacz CD dla Window Makera z obs³ug± CDDB
 Name:		wmsvencd
 Version:	0.5.0
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Window Managers/Tools
 Group(de):	X11/Fenstermanager/Werkzeuge
@@ -41,7 +41,7 @@ install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1} \
 
 install %{name} $RPM_BUILD_ROOT%{_bindir}
 install %{name}.1x $RPM_BUILD_ROOT%{_mandir}/man1/%{name}.1
-install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/DockApplets
+#install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/DockApplets
 
 gzip -9nf README
 
@@ -54,4 +54,4 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/%{name}
 %{_mandir}/man1/*
 
-%{_applnkdir}/DockApplets/%{name}.desktop
+#%{_applnkdir}/DockApplets/%{name}.desktop
