@@ -1,5 +1,5 @@
 Summary:	Window Maker Dockable CD-Player with CDDB
-Summary(pl.UTF-8):   Dokowalny odtwarzacz CD dla Window Makera z obsługą CDDB
+Summary(pl.UTF-8):	Dokowalny odtwarzacz CD dla Window Makera z obsługą CDDB
 Name:		wmsvencd
 Version:	0.5.0
 Release:	2
