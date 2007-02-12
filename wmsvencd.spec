@@ -1,5 +1,5 @@
 Summary:	Window Maker Dockable CD-Player with CDDB
-Summary(pl):	Dokowalny odtwarzacz CD dla Window Makera z obs≥ug± CDDB
+Summary(pl.UTF-8):   Dokowalny odtwarzacz CD dla Window Makera z obs≈ÇugƒÖ CDDB
 Name:		wmsvencd
 Version:	0.5.0
 Release:	2
@@ -19,9 +19,9 @@ wmsvencd is yet another CD player for X. It displays the current track
 number, time, disc title, song title, and CD player controls all in
 atiny 64x64 pixels.
 
-%description -l pl
-wsvencd jest jeszcze jednym odtwarzaczem CD pod X-y. Wy∂wietla bieø±cy
-numer piosenki, czas, tytu≥ p≥yty, tytu≥ piosenki oraz kontrolki
+%description -l pl.UTF-8
+wsvencd jest jeszcze jednym odtwarzaczem CD pod X-y. Wy≈õwietla bie≈ºƒÖcy
+numer piosenki, czas, tytu≈Ç p≈Çyty, tytu≈Ç piosenki oraz kontrolki
 odtwarzacza - wszystko w malutkim obszarze 64x64 pixele.
 
 %prep
