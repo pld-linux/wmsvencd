@@ -5,5 +5,4 @@ Comment[pl]=Kolejny odtwarzacz CD pod Window Makera z obsługą CDDB
 Exec=wmsvencd
 Terminal=false
 Type=Application
-Encoding=UTF-8
 # vi: encoding=utf-8
